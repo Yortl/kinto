@@ -5,7 +5,7 @@ cat << EOF > /etc/config.json
 {
   "inbounds":[
     {
-      "port": $PORT,
+      "port": 2333,
       "protocol": "$PROTOCOL",
       "settings": {
         "decryption": "none",
@@ -16,7 +16,7 @@ cat << EOF > /etc/config.json
         ]
       },
       "streamSettings": {
-        "network": "ws"
+        "network": "tcp"
       }
     }
   ],
